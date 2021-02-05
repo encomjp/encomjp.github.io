@@ -25,10 +25,10 @@
                     modestbranding: 1,
                     vq: 'hd1080'},
           videoId: 'qohPbdQe4uY',
-          events: {
+          events: (function e) {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
-            'target.setPlaybackRate(0.5);
+            e.target.setPlaybackRate(0.5);
           }
         });
       }
