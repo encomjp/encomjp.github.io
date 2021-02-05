@@ -28,6 +28,10 @@
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
             
+            onReady: function(e) {
+                e.target.setPlaybackRate(0.5); // set to half speed
+                e.target.playVideo(); // watch lolcats in slow motion :)
+            },
           }
         });
       }
